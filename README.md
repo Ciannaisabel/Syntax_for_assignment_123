@@ -161,10 +161,7 @@ EXECUTE.
 COMPUTE backwards_res_sq=residual_backwards_model * residual_backwards_model.
 EXECUTE.
 
-COMPUTE pain_sq=pain * pain.
-EXECUTE.
-
-DESCRIPTIVES VARIABLES=theory_res_sq backwards_res_sq pain_sq
+DESCRIPTIVES VARIABLES=theory_res_sq backwards_res_sq
   /STATISTICS=MEAN SUM STDDEV MIN MAX.
 
 **testing backwards vs. initial**
